@@ -162,17 +162,17 @@
     <div class="popup__container">
       <div>
         <form class="form">
-          <input type="hidden" name="admin_email[]" value="ruslan.ru225@mail.ru">
-          <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
-          <input type="text" name="fio" data-validate-field="fio" placeholder="Фио">
-          <input type="email" name="email" data-validate-field="email" placeholder="email">
-          <input type="tel" name="tel" data-validate-field="tel" placeholder="Телефон">
+          <input required type="hidden" name="admin_email[]" value="ruslan.ru225@mail.ru">
+          <input required type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+          <input required type="text" name="fio" data-validate-field="fio" placeholder="Фио">
+          <input required type="email" name="email" data-validate-field="email" placeholder="email">
+          <input required type="tel" name="tel" data-validate-field="tel" placeholder="Телефон">
           <button type="submit" class="form__button button">Отправить</button>
         </form>
       </div>
     </div>
     <script src="./lib/jquery-3.4.1.min.js"></script>
-    <script src="./lib/just-validate.min.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
     <script src="./lib/inputmask.min.js"></script>
     <script src="./lib/common.js"></script>
     <script src="./lib/swiper.min.js"></script>
