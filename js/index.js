@@ -103,5 +103,18 @@ var mySwiper1 = new Swiper('.swiper-container1', {
     }
   });
 
-  $(".form").validate();
+  $(".form").validate({
+    messages: {
+      fio: {
+        required: "Вы не ввели своё имя.",
+      },
+      email: {
+        required: "Вы не ввели свою почту.",
+        email: "Ваша почта указана не верно."
+      },
+      tel: {
+        required: "Вы не ввели свой телефон.",
+      }
+    }
+  });;
 

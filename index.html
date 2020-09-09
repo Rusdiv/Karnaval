@@ -162,14 +162,15 @@
     <div class="popup__container">
       <div>
         <form class="form" action="send.php" method="POST">
+          <p class="form__p">Все поля обязательны для ввода</p>
           <label class="form__label">
-            <input required type="text" name="fio" data-validate-field="fio" placeholder="Фио">
+            <input required type="text" name="fio" data-validate-field="fio" placeholder="Ваше имя">
           </label>
           <label class="form__label">
-            <input required type="email" name="email" data-validate-field="email" placeholder="email">
+            <input required type="email" name="email" data-validate-field="email" placeholder="Ваш email">
           </label>
           <label class="form__label">
-            <input required type="tel" name="tel" data-validate-field="tel" placeholder="Телефон">
+            <input required type="tel" name="tel" data-validate-field="tel" placeholder="Ваш телефон">
           </label>
           <button type="submit" class="form__button button">Отправить</button>
         </form>

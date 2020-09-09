@@ -23,6 +23,10 @@
   }
 }
 
+html {
+  font-family: 'Nunito' ;
+}
+
 body {
   background-image: url('../images/balls.png');
   background-repeat: repeat-y;
@@ -446,7 +450,7 @@ ul {
 #fio-error, #email-error, #tel-error {
   position: absolute;
   top: 56px;
-  left: 36%;
+  left: 34%;
   color: red;
 }
 
@@ -456,6 +460,10 @@ ul {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.form__p {
+  margin: 5px auto;
 }
 
 @media (max-width: 1024px) {
