@@ -162,11 +162,15 @@
     <div class="popup__container">
       <div>
         <form class="form" action="send.php" method="POST">
-          <input required type="hidden" name="admin_email[]" value="ruslan.ru225@mail.ru">
-          <input required type="hidden" name="form_subject" value="Заявка с сайта Сайт">
-          <input required type="text" name="fio" data-validate-field="fio" placeholder="Фио">
-          <input required type="email" name="email" data-validate-field="email" placeholder="email">
-          <input required type="tel" name="tel" data-validate-field="tel" placeholder="Телефон">
+          <label class="form__label">
+            <input required type="text" name="fio" data-validate-field="fio" placeholder="Фио">
+          </label>
+          <label class="form__label">
+            <input required type="email" name="email" data-validate-field="email" placeholder="email">
+          </label>
+          <label class="form__label">
+            <input required type="tel" name="tel" data-validate-field="tel" placeholder="Телефон">
+          </label>
           <button type="submit" class="form__button button">Отправить</button>
         </form>
       </div>

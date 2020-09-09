@@ -411,8 +411,6 @@ ul {
   border-radius: 25px;
   width: 60%;
   margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 15px;
   outline: none;
 }
 
@@ -446,8 +444,18 @@ ul {
 }
 
 #fio-error, #email-error, #tel-error {
-  margin: 5px auto;
+  position: absolute;
+  top: 56px;
+  left: 36%;
   color: red;
+}
+
+.form__label {
+    padding-bottom: 35px; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 @media (max-width: 1024px) {
