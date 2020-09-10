@@ -5,13 +5,7 @@ const body = document.querySelector('body');
 const link = document.getElementById('1');
 const link2 = document.getElementById('2');
 const link3 = document.getElementById('3');
-// const input1 = document.querySelector('.input1');
-// const input2 = document.querySelector('.input2');
-// const input3 = document.querySelector('.input3');
 
-// if (!input1) {
-
-// }
 
 function showMenu() {
   hamburger.classList.contains('is-active') ? hamburger.classList.remove('is-active') : hamburger.classList.add('is-active');
@@ -117,4 +111,29 @@ var mySwiper1 = new Swiper('.swiper-container1', {
       }
     }
   });;
+
+  var mySwiper1 = new Swiper('.swiper-container2', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2',
+    },
+    pagination: {
+        el: '.swiper-pagination2',
+        type: 'bullets',
+        clickable: true,
+    },
+    breakpoints: {
+        1025: {
+            slidesPerView: 4,
+            spaceBetween: 0,
+        },
+        768: {
+            slidesPerView: 3,
+  
+        },
+    }
+  });
 
