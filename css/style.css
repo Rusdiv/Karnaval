@@ -376,6 +376,31 @@ ul {
   margin-top: 93px;
 }
 
+.form__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__p {
+  text-align: center;
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+}
+
+#fio-error, #email-error, #tel-error {
+  top: 80%;
+  left:50%; 
+  margin-left:-15%;
+  position: absolute;
+  color: red;
+}
+
+
+
 .swiper-button-next,
 .swiper-button-next1,
 .swiper-button-next2 {
@@ -407,7 +432,6 @@ ul {
 
 .form__button {
   margin-top: 15px;
-  margin-left: 15px;
   padding: 13px 25px;
   border: none;
   outline: none;
@@ -425,8 +449,8 @@ ul {
 }
 
 .form input {
-  margin-left: 5px;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 15px;
   border: 1px solid #FFEA00;
   border-radius: 25px;
